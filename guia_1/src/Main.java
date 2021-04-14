@@ -29,7 +29,7 @@ public class Main {
         System.out.println("Se muestran las propiedades generadas por defecto del rectangulo.");
         System.out.println(rectanguloPorDefecto.toString());
 
-*/
+
 
         // ---------------- EJERCICIO 2 EMPLEADO ---------------------- //
         //a. Inicialice un empleado Carlos Gutiérrez, con dni 23456345 y salario inicial de 25000.
@@ -40,17 +40,39 @@ public class Main {
         System.out.println("Se han cargado 2 empleados:");
         System.out.println(empleado1.toString());
         System.out.println(empleado2.toString());
-       // d. Aumente el salario del empleado Carlos en un 15% e imprima en pantalla el salario anual del mismo*/
+        //d. Aumente el salario del empleado Carlos en un 15% e imprima en pantalla el salario anual del mismo
         double aux_salario = empleado1.getSalario()*1.15;
         empleado1.setSalario(aux_salario);
         System.out.println("Se le ha aumentado el salario al empleado 2:");
         System.out.println(empleado2.toString());
 
         // ---------------- EJERCICIO 3 ---------------------- //
+        //a. Inicialice el objeto con los atributos necesarios
+        ItemVenta item = new ItemVenta("Caramelo", 3, 2.5);
+        //b. Imprima por pantalla el objeto inicializado.
+        System.out.println("Se inicializó un item:");
+        System.out.println(item.toString());
 
         // ---------------- EJERCICIO 4 ---------------------- //
-
+        //Realice las siguientes operaciones:
+        //1. Inicialice una cuenta con un monto inicial de 15000.
+        CuentaBancaria cuenta1 = new CuentaBancaria("Carlos Graziano", 15000);
+        //2. Realice una operación de crédito de 2500.
+        cuenta1.credito(2500);
+        System.out.println(cuenta1.toString());
+        //3. Realice una operación de compra de 1500.
+        System.out.println(cuenta1.debito(1500));
+        //4. Realice una operación de compra de 30000.
+        System.out.println(cuenta1.debito(30000));
+        //5. Imprima por pantalla los valores de la cuenta y verifique que el balance sea correcto.
+*/
         // ---------------- EJERCICIO 5 ---------------------- //
+        //Considere el siguiente comportamiento:
+        //1. Un método que imprima la hora bajo el siguiente formato hh:mm:ss
+        //usando zero a la izquierda ejemplo 13:04:22 .
+        //2. Un método que avance en 1 segundo y devuelva la instancia del objeto.
+        //3. Un método que retroceda en 1 segundo y devuelva la instancia del objeto.
+        //4. Instanciar el objeto y probar los métodos creados.
 
 
 
